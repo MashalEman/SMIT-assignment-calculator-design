@@ -1,0 +1,138 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Layout Design</title>
+    <style>
+        body{
+            background-color: rgba(0,50,50, 1);
+        }
+
+        .main-box{
+            border: 1px rgba(255,255,250, 1);
+            padding: 12px;
+            height: 350px;
+            width: 200px;
+            border-radius: 6px;
+           margin-left: 40%;
+           background-color: rgba(0,25,0, 1);
+        }
+        
+       table{
+        height: 250px;
+        width: 180px;
+        margin-left: 5%;
+        margin-top: 5%;
+        border-radius: 6px;
+        border-spacing: 10px;
+       }
+       
+       td{
+        width: 5%;
+        background-color:  rgba(0,25,0, 1);
+       }
+
+       .Answer {
+        font-size: 24px;
+        padding: 9px 5px;
+        font-weight: 500;
+        text-align: right;
+        color: aliceblue;
+        width: 94%;
+        border: none;
+        border-radius: 6px;
+        background-color:rgba(0,50,50, 1);
+        -webkit-box-shadow: 1px 1px 4px 0px rgb(255, 255, 255);
+    }
+
+        .result{
+            padding: 12px;
+            font-size: 13px;
+            border: none;
+            color: aliceblue;
+            border-radius: 4px;
+            background-color: rgba(0,50,50, 1);
+            width: 96%;
+            height: 96%;
+            -webkit-box-shadow: 1px 1px 4px 0px rgb(255,255,255, 1);    
+       }
+        
+        
+
+    </style>
+</head>
+<body>
+    <div class="main-box">
+    <table>
+
+        <tr>
+            <td colspan="4" >
+            <input type="number" class="Answer"></td>
+        </tr>
+        <tr>
+            <div>
+            <td colspan="2"><input type="button" value="C" class="result" style="background-color: red;"></td>
+            <td><input type="button" value="/" class="result"></td>
+            <td><input type="button" value="*" class="result"></td>
+        </div>
+        </tr>
+        <tr>
+            <td><input type="button" value="7" class="result"></td>
+            <td><input type="button" value="8" class="result"></td>
+            <td><input type="button" value="9" class="result"></td>
+            <td><input type="button" value="-" class="result"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="4" class="result"></td>
+            <td><input type="button" value="5" class="result"></td>
+            <td><input type="button" value="6" class="result"></td>
+            <td rowspan="2"><input type="button" value="+" class="result"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="1" class="result"></td>
+            <td><input type="button" value="2" class="result"></td>
+            <td><input type="button" value="3" class="result"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="%" class="result"></td>
+            <td><input type="button" value="0" class="result"></td>
+            <td><input type="button" value="." class="result"></td>
+            <td><input type="button" value="=" class="result" style="background-color: blue;"></td>
+        </tr>
+    </table>
+</div>
+</body>
+</html> 
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Layout Design</title>
+</head>
+<body>
+     <div class="outer-box"> 
+     <div class="container">
+        <div class="header"></div>
+        <input type="text" class="result">
+        <table>
+            <tr><div>
+                <td colspan="2"><input type="button" value="C"></td>
+                <td><input type="button" value="/"></td>
+                <td><input type="button" value="*"></td>
+            </tr>
+        </table>
+     </div> 
+</body>
+</html>-->
